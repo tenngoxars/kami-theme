@@ -1,118 +1,123 @@
 <div align="center">
   <h1>📜 Kami Theme</h1>
-  <p><b>A refined, eye-friendly light theme suite for Terminals, Editors, and CLI tools inspired by the Kami paper aesthetic.</b></p>
-  <p><i>Low-saturation linen parchment canvas · Mineral ink accents · Anti-glare readability</i></p>
+  <p><b>An eye-friendly light theme suite for terminals, coding agents, and editors.</b></p>
+  <p><i>Soft linen canvas · Mineral inks · Low-glare readability</i></p>
 </div>
 
 ---
 
-## 💡 Acknowledgement & Heritage
+## Acknowledgement
 
-This project’s aesthetic foundation and color philosophy are derived from **[tw93/Kami](https://github.com/tw93/Kami)** (Good content deserves good paper).
+Kami Theme adapts the color philosophy of [tw93/Kami](https://github.com/tw93/Kami) for developer tools. Kami is a print-first design system built around warm paper and ink blue; this project applies those ideas to terminal, TUI, and editor color roles.
 
-Kami was originally designed as a print-first document design system with a warm parchment canvas (`#f5f4ed`) and ink-blue accents (`#1B365D`). **Kami Theme** adapts and extends this philosophy to high-density CLI/TUI and Editor environments by:
-- Tuning the background to **`#EAE7E1` (Soft Linen / 亚麻暖灰)** to completely eliminate monitor glare while avoiding the yellowish/greenish cast of classic Solarized Light.
-- Expanding the single ink accent into a **calibrated 16-color ANSI mineral ink matrix** (Pine Green, Ochre, Terracotta, Slate Teal, and Ink Blue) with strictly balanced contrast and zero fluorescent eye strain.
+The base canvas is **`#EAE7E1` Soft Linen**: darker and more neutral than a bright paper white, without Solarized Light's yellow-green cast.
 
 ---
 
-## 🎨 Palette Specification
+## Status
 
-### Canvas & Surface
+| Tier | Targets |
+| :--- | :--- |
+| **Verified** | Warp, Oh My Pi (`omp`), VS Code |
+| **Experimental** | Pi, OpenCode, Ghostty, Windows Terminal, iTerm2, Alacritty, Kitty, Neovim, Zed, Sublime Text, Git Delta, Bat, Lazygit, FZF, Starship, Obsidian |
 
-| Role | Name | Hex | Usage |
-| :--- | :--- | :--- | :--- |
-| **Canvas** | Soft Linen (亚麻暖灰) | `#EAE7E1` | Default editor/terminal background (zero glare, no yellow tint) |
-| **Foreground** | Near Black (暖墨黑) | `#141413` | Primary body text & commands |
-| **Cursor / Accent** | Ink Blue (经典墨蓝) | `#1B365D` | Cursor, active highlights, key headings, status bar |
-| **Selection** | Sand (暖沙高亮) | `#DDD8CE` | Text selection background |
-| **Border / Divider** | Sand Border (素沙分割) | `#D3CFC4` | Box borders, separators, subtle lines |
-| **Elevated Surface** | Ivory (象牙白) | `#F4F2EC` | Floated message containers, cards, inputs |
-| **Sidebar / Panel** | Warm Muted (暖灰浮层) | `#E2DFD8` | Sidebar, titlebar, panels |
-| **Muted / Dim** | Stone / Dim Stone | `#7A7871` / `#96948C` | Comments, line numbers, timestamps |
-
-### ANSI & Syntax Inks (草木 / 矿物墨色)
-
-| Role / ANSI | Color Name | Hex | Semantic Usage (Code & Terminal) |
-| :--- | :--- | :--- | :--- |
-| **Keyword / Blue** | 墨蓝 (Brand) | `#1B365D` | Keywords (`const`, `fn`, `import`), directories, headings |
-| **Function / Green** | 松柏绿 | `#20563D` | Functions, methods, Git additions |
-| **String / Yellow** | 焦茶黄 | `#9E6B00` | Strings, regex literals, warnings |
-| **Constant / Red** | 熟褐色 | `#8B4513` | Numbers, booleans, constants, inline code |
-| **Type / Cyan** | 远山青 | `#2C5E6B` | Types, interfaces, classes |
-| **Operator / Olive** | 暖橄榄 | `#504E49` | Operators, punctuation |
-| **Comment / Dim** | 暖石灰 | `#96948C` | Comments (italic, low contrast reduction) |
-| **Special / Magenta** | 黛青蓝 | `#4A6B82` | Decorators, special tokens (no fluorescent pink) |
+Experimental targets are generated from the same palette but are not yet verified in their real application. Their formats and installation instructions may change; please report incompatibilities.
 
 ---
-## 🚀 Quick Install
 
-### One-Liner (No clone needed)
+## Palette
 
-**macOS / Linux**:
+| Role | Hex | Usage |
+| :--- | :--- | :--- |
+| Canvas | `#EAE7E1` | Main background |
+| Foreground | `#141413` | Main text |
+| Ink Blue | `#1B365D` | Cursor, focus, keywords |
+| Pine Green | `#20563D` | Functions, success, additions |
+| Ochre | `#9E6B00` | Strings, warnings |
+| Rust | `#8B4513` | Numbers, constants |
+| Slate Teal | `#2C5E6B` | Types |
+| Sand | `#DDD8CE` | Selection |
+| Sand Border | `#D3CFC4` | Dividers and borders |
+| Dim Stone | `#96948C` | Comments and metadata |
+
+---
+
+## Quick Install
+
+The installers require **Git** when run as a one-liner. They deploy only detected, supported applications; they do not switch a user's active theme.
+
+### macOS / Linux
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/tenngoxars/kami-theme/main/install.sh | bash
 ```
 
-**Windows PowerShell**:
+### Windows PowerShell
+
 ```powershell
 irm https://raw.githubusercontent.com/tenngoxars/kami-theme/main/install.ps1 | iex
 ```
 
----
-
-### Or via Git Clone
+Or clone the repository and run the platform script:
 
 ```bash
 git clone https://github.com/tenngoxars/kami-theme.git
 cd kami-theme
-./install.sh  # On Windows: .\install.ps1
+./install.sh
 ```
+
+After installation, select **Kami** in the application's theme picker. For `omp` and Pi, select `kami` in `/settings`; for OpenCode, run `/theme` and select `kami`.
+
 ---
-## 🖥️ Platform Support (19 Targets)
 
-### 1. AI Coding Agents
-- **Oh My Pi (omp)**: `dist/omp/kami.json` (Full 66-token palette aligned with status line & tool tracers)
-- **Pi (pi)**: `dist/pi/kami.json` (Upstream Pi coding agent theme)
-- **OpenCode**: `dist/opencode/kami.json` (OpenCode TUI theme format)
+## Platform Support (19 Targets)
 
-### 2. Code Editors
-- **VS Code**: `dist/vscode/` (Extension package & VSIX)
-- **Neovim**: `dist/neovim/colors/kami.lua` (Full Treesitter syntax tree support)
-- **Zed**: `dist/zed/themes/kami.json` (Zed Theme format)
-- **Sublime Text**: `dist/sublime-text/Kami.sublime-color-scheme`
-### 3. Terminal Emulators
-- **Warp**: `dist/warp/kami.yaml`
-- **Ghostty**: `dist/ghostty/kami.conf`
-- **Windows Terminal**: `dist/windows-terminal/kami.json`
-- **iTerm2**: `dist/iterm2/Kami.itermcolors`
-- **Alacritty**: `dist/alacritty/kami.toml`
-- **Kitty**: `dist/kitty/kami.conf`
+### AI Coding Agents
 
-### 4. CLI & TUI Tools
-- **Git Delta**: `dist/delta/kami.gitconfig`
-- **Bat**: `dist/bat/Kami.tmTheme`
-- **Lazygit**: `dist/lazygit/config.yml`
-- **FZF**: `dist/fzf/kami.sh`
-- **Starship**: `dist/starship/starship.toml`
+- **Oh My Pi (`omp`)** — `dist/omp/kami.json`
+- **Pi (`pi`)** — `dist/pi/kami.json`
+- **OpenCode** — `dist/opencode/kami.json`
 
-### 5. Note-Taking & Productivity
-- **Obsidian**: `dist/obsidian/theme.css` + `manifest.json`
+### Code Editors
 
-## 🛠️ Build & Extend
+- **VS Code** — `dist/vscode/`, including a VSIX
+- **Neovim** — `dist/neovim/colors/kami.lua`
+- **Zed** — `dist/zed/themes/kami.json`
+- **Sublime Text** — `dist/sublime-text/Kami.sublime-color-scheme`
 
-The repository follows a **Single Source of Truth** architecture:
+### Terminal Emulators
+
+- **Warp** — `dist/warp/kami.yaml`
+- **Ghostty** — `dist/ghostty/kami.conf`
+- **Windows Terminal** — `dist/windows-terminal/kami.json`
+- **iTerm2** — `dist/iterm2/Kami.itermcolors`
+- **Alacritty** — `dist/alacritty/kami.toml`
+- **Kitty** — `dist/kitty/kami.conf`
+
+### CLI and TUI Tools
+
+- **Git Delta** — `dist/delta/kami.gitconfig`
+- **Bat** — `dist/bat/Kami.tmTheme`
+- **Lazygit** — `dist/lazygit/config.yml`
+- **FZF** — `dist/fzf/kami.sh`
+- **Starship** — `dist/starship/starship.toml`
+
+### Notes
+
+- **Obsidian** — `dist/obsidian/theme.css`
+
+---
+
+## Build
+
+`palette.json` is the source for the shared base and ANSI colors. Generated targets may add application-specific surface colors where their APIs require them.
 
 ```bash
-# 1. Edit the core palette
-vim palette.json
-
-# 2. Recompile all 19 distributions
 node build.js
 ```
 
 ---
 
-## 📄 License
+## License
 
-MIT License. Core aesthetic inspired by and attributed to [tw93/Kami](https://github.com/tw93/Kami).
+MIT. Core aesthetic inspiration is credited to [tw93/Kami](https://github.com/tw93/Kami).

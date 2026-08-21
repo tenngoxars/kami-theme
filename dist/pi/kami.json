@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/can1357/oh-my-pi/main/packages/coding-agent/theme-schema.json",
+  "$schema": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/src/modes/interactive/theme/theme-schema.json",
   "name": "kami",
   "vars": {
     "parchment": "#EAE7E1",
@@ -80,22 +80,7 @@
     "thinkingMedium": "slateCyan",
     "thinkingHigh": "slateSlate",
     "thinkingXhigh": "rust",
-    "bashMode": "pineGreen",
-    "pythonMode": "ochre",
-    "statusLineBg": "#E2DFD8",
-    "statusLineSep": "#C0BDB4",
-    "statusLineModel": "inkBlue",
-    "statusLinePath": "slateCyan",
-    "statusLineGitClean": "pineGreen",
-    "statusLineGitDirty": "ochre",
-    "statusLineContext": "inkLight",
-    "statusLineSpend": "slateSlate",
-    "statusLineStaged": "pineGreen",
-    "statusLineDirty": "ochre",
-    "statusLineUntracked": "inkLight",
-    "statusLineOutput": "sandBorder",
-    "statusLineCost": "rust",
-    "statusLineSubagents": "inkBlue"
+    "bashMode": "pineGreen"
   },
   "export": {
     "pageBg": "parchment",
