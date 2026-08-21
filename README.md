@@ -69,17 +69,18 @@ cd kami-theme
 ./install.sh  # On Windows: .\install.ps1
 ```
 ---
-## 🖥️ Platform Support (17 Targets)
+## 🖥️ Platform Support (19 Targets)
 
 ### 1. AI Coding Agents
 - **Oh My Pi (omp)**: `dist/omp/kami.json` (Full 66-token palette aligned with status line & tool tracers)
 - **Pi (pi)**: `dist/pi/kami.json` (Upstream Pi coding agent theme)
 - **OpenCode**: `dist/opencode/kami.json` (OpenCode TUI theme format)
+
+### 2. Code Editors
 - **VS Code**: `dist/vscode/` (Extension package & VSIX)
 - **Neovim**: `dist/neovim/colors/kami.lua` (Full Treesitter syntax tree support)
 - **Zed**: `dist/zed/themes/kami.json` (Zed Theme format)
 - **Sublime Text**: `dist/sublime-text/Kami.sublime-color-scheme`
-
 ### 3. Terminal Emulators
 - **Warp**: `dist/warp/kami.yaml`
 - **Ghostty**: `dist/ghostty/kami.conf`
@@ -106,7 +107,7 @@ The repository follows a **Single Source of Truth** architecture:
 # 1. Edit the core palette
 vim palette.json
 
-# 2. Recompile all 17 distributions
+# 2. Recompile all 19 distributions
 node build.js
 ```
 
