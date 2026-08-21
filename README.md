@@ -73,8 +73,8 @@ cd kami-theme
 
 ### 1. AI Coding Agents
 - **Oh My Pi (omp)**: `dist/omp/kami.json` (Full 66-token palette aligned with status line & tool tracers)
+- **Pi (pi)**: `dist/pi/kami.json` (Upstream Pi coding agent theme)
 - **OpenCode**: `dist/opencode/kami.json` (OpenCode TUI theme format)
-### 2. Code Editors
 - **VS Code**: `dist/vscode/` (Extension package & VSIX)
 - **Neovim**: `dist/neovim/colors/kami.lua` (Full Treesitter syntax tree support)
 - **Zed**: `dist/zed/themes/kami.json` (Zed Theme format)

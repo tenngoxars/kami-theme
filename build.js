@@ -31,9 +31,7 @@ ensureDir(distDir);
    1. AI Coding Agents
    ========================================================================= */
 
-// 1.1 Oh My Pi / OMP (JSON)
-const ompDir = path.join(distDir, 'omp');
-ensureDir(ompDir);
+// 1.1 Oh My Pi & Vanilla Pi (JSON)
 const ompJson = {
   "$schema": "https://raw.githubusercontent.com/can1357/oh-my-pi/main/packages/coding-agent/theme-schema.json",
   "name": "kami",
@@ -139,7 +137,14 @@ const ompJson = {
     "infoBg": "sand"
   }
 };
+
+const ompDir = path.join(distDir, 'omp');
+ensureDir(ompDir);
 fs.writeFileSync(path.join(ompDir, 'kami.json'), JSON.stringify(ompJson, null, 2));
+
+const piDir = path.join(distDir, 'pi');
+ensureDir(piDir);
+fs.writeFileSync(path.join(piDir, 'kami.json'), JSON.stringify(ompJson, null, 2));
 
 // 1.2 OpenCode (JSON)
 const opencodeDir = path.join(distDir, 'opencode');
@@ -982,4 +987,4 @@ fs.writeFileSync(path.join(obsidianDir, 'manifest.json'), JSON.stringify({
   "author": "tenngo"
 }, null, 2));
 
-console.log('✨ All 18 distribution targets across Agents, Terminals, CLIs, Editors, and Notes compiled successfully in dist/ !');
+console.log('✨ All 19 distribution targets across Agents, Terminals, CLIs, Editors, and Notes compiled successfully in dist/ !');

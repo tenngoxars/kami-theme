@@ -31,12 +31,16 @@ try {
   Copy-Item "$ScriptDir\dist\warp\kami.yaml" "$warpThemes2\kami.yaml" -Force
   Write-Host "  ✓ Warp ($warpThemes1\kami.yaml)" -ForegroundColor Green
 
-  # 2. Oh My Pi (omp)
+  # 2. Oh My Pi (omp) & Pi
   $ompThemes = "$HOME\.omp\agent\themes"
   New-Item -ItemType Directory -Path $ompThemes -Force | Out-Null
   Copy-Item "$ScriptDir\dist\omp\kami.json" "$ompThemes\kami.json" -Force
   Write-Host "  ✓ Oh My Pi ($ompThemes\kami.json)" -ForegroundColor Green
 
+  $piThemes = "$HOME\.pi\agent\themes"
+  New-Item -ItemType Directory -Path $piThemes -Force | Out-Null
+  Copy-Item "$ScriptDir\dist\pi\kami.json" "$piThemes\kami.json" -Force
+  Write-Host "  ✓ Pi ($piThemes\kami.json)" -ForegroundColor Green
   # 3. OpenCode
   $opencodeThemes = "$HOME\.config\opencode\themes"
   New-Item -ItemType Directory -Path $opencodeThemes -Force | Out-Null

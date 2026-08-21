@@ -31,6 +31,12 @@ if [ -d "$HOME/.omp" ] || command -v omp &>/dev/null; then
   echo "  ✓ Oh My Pi (~/.omp/agent/themes/kami.json)"
 fi
 
+if [ -d "$HOME/.pi" ] || command -v pi &>/dev/null; then
+  mkdir -p "$HOME/.pi/agent/themes" "$HOME/.pi/themes"
+  cp "$REPO_DIR/dist/pi/kami.json" "$HOME/.pi/agent/themes/kami.json"
+  cp "$REPO_DIR/dist/pi/kami.json" "$HOME/.pi/themes/kami.json"
+  echo "  ✓ Pi (~/.pi/agent/themes/kami.json)"
+fi
 if [ -d "$HOME/.config/opencode" ] || command -v opencode &>/dev/null; then
   mkdir -p "$HOME/.config/opencode/themes"
   cp "$REPO_DIR/dist/opencode/kami.json" "$HOME/.config/opencode/themes/kami.json"
