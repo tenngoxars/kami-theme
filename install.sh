@@ -23,9 +23,15 @@ cleanup() {
 }
 trap cleanup EXIT
 
-echo "📦 Deploying Kami Theme across your tools..."
+# 1. AI Coding Agents
+if [ -d "$HOME/.omp" ] || command -v omp &>/dev/null; then
+  mkdir -p "$HOME/.omp/agent/themes" "$HOME/.omp/themes"
+  cp "$REPO_DIR/dist/omp/kami.json" "$HOME/.omp/agent/themes/kami.json"
+  cp "$REPO_DIR/dist/omp/kami.json" "$HOME/.omp/themes/kami.json"
+  echo "  ✓ Oh My Pi (~/.omp/agent/themes/kami.json)"
+fi
 
-# 1. Warp
+# 2. Terminal Emulators
 if [ -d "$HOME/.warp" ] || command -v warp-terminal &>/dev/null || [ -d "/Applications/Warp.app" ]; then
   mkdir -p "$HOME/.warp/themes"
   cp "$REPO_DIR/dist/warp/kami.yaml" "$HOME/.warp/themes/kami.yaml"

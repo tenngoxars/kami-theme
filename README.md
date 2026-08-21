@@ -69,35 +69,34 @@ cd kami-theme
 ./install.sh  # On Windows: .\install.ps1
 ```
 ---
-
 ## 🖥️ Platform Support (17 Targets)
 
-### 1. Code Editors
+### 1. AI Coding Agents
+- **Oh My Pi (omp)**: `dist/omp/kami.json` (Full 66-token palette aligned with status line & tool tracers)
+
+### 2. Code Editors
 - **VS Code**: `dist/vscode/` (Extension package & VSIX)
-- **Neovim**: `dist/neovim/colors/kami.lua` (Full Treesitter support)
+- **Neovim**: `dist/neovim/colors/kami.lua` (Full Treesitter syntax tree support)
 - **Zed**: `dist/zed/themes/kami.json` (Zed Theme format)
 - **Sublime Text**: `dist/sublime-text/Kami.sublime-color-scheme`
 
-### 2. Terminals
+### 3. Terminal Emulators
 - **Warp**: `dist/warp/kami.yaml`
-- **Oh My Pi (omp)**: `dist/omp/kami.json`
 - **Ghostty**: `dist/ghostty/kami.conf`
 - **Windows Terminal**: `dist/windows-terminal/kami.json`
 - **iTerm2**: `dist/iterm2/Kami.itermcolors`
 - **Alacritty**: `dist/alacritty/kami.toml`
 - **Kitty**: `dist/kitty/kami.conf`
 
-### 3. CLI & TUI Tools
+### 4. CLI & TUI Tools
 - **Git Delta**: `dist/delta/kami.gitconfig`
 - **Bat**: `dist/bat/Kami.tmTheme`
 - **Lazygit**: `dist/lazygit/config.yml`
 - **FZF**: `dist/fzf/kami.sh`
 - **Starship**: `dist/starship/starship.toml`
 
-### 4. Note-Taking & Productivity
+### 5. Note-Taking & Productivity
 - **Obsidian**: `dist/obsidian/theme.css` + `manifest.json`
-
----
 
 ## 🛠️ Build & Extend
 
