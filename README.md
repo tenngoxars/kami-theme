@@ -45,25 +45,29 @@ Kami was originally designed as a print-first document design system with a warm
 | **Special / Magenta** | 黛青蓝 | `#4A6B82` | Decorators, special tokens (no fluorescent pink) |
 
 ---
-
 ## 🚀 Quick Install
 
-### One-Line Install (macOS / Linux)
+### One-Liner (No clone needed)
+
+**macOS / Linux**:
+```bash
+curl -fsSL https://raw.githubusercontent.com/tenngoxars/kami-theme/main/install.sh | bash
+```
+
+**Windows PowerShell**:
+```powershell
+irm https://raw.githubusercontent.com/tenngoxars/kami-theme/main/install.ps1 | iex
+```
+
+---
+
+### Or via Git Clone
 
 ```bash
 git clone https://github.com/tenngoxars/kami-theme.git
 cd kami-theme
-./install.sh
+./install.sh  # On Windows: .\install.ps1
 ```
-
-### One-Line Install (Windows PowerShell)
-
-```powershell
-git clone https://github.com/tenngoxars/kami-theme.git
-cd kami-theme
-.\install.ps1
-```
-
 ---
 
 ## 🖥️ Platform Support (17 Targets)
