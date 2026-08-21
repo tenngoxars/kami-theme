@@ -37,7 +37,12 @@ try {
   Copy-Item "$ScriptDir\dist\omp\kami.json" "$ompThemes\kami.json" -Force
   Write-Host "  ✓ Oh My Pi ($ompThemes\kami.json)" -ForegroundColor Green
 
-  # 3. VS Code
+  # 3. OpenCode
+  $opencodeThemes = "$HOME\.config\opencode\themes"
+  New-Item -ItemType Directory -Path $opencodeThemes -Force | Out-Null
+  Copy-Item "$ScriptDir\dist\opencode\kami.json" "$opencodeThemes\kami.json" -Force
+  Write-Host "  ✓ OpenCode ($opencodeThemes\kami.json)" -ForegroundColor Green
+  # 4. VS Code
   if (Get-Command code -ErrorAction SilentlyContinue) {
     code --install-extension "$ScriptDir\dist\vscode\kami-theme-0.1.0.vsix" --force | Out-Null
     Write-Host "  ✓ VS Code (VSIX extension installed)" -ForegroundColor Green

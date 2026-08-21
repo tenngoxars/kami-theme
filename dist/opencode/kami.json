@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "name": "Kami",
+  "type": "light",
+  "colors": {
+    "background": "#EAE7E1",
+    "foreground": "#141413",
+    "primary": "#1B365D",
+    "secondary": "#2D5A8A",
+    "accent": "#1B365D",
+    "muted": "#7A7871",
+    "border": "#D3CFC4",
+    "borderAccent": "#1B365D",
+    "surface": "#F4F2EC",
+    "surfaceHover": "#DDD8CE",
+    "selected": "#DDD8CE",
+    "success": "#20563D",
+    "error": "#A64036",
+    "warning": "#9E6B00",
+    "info": "#2C5E6B"
+  },
+  "syntax": {
+    "keyword": "#1B365D",
+    "function": "#20563D",
+    "string": "#9E6B00",
+    "number": "#8B4513",
+    "type": "#2C5E6B",
+    "comment": "#96948C",
+    "variable": "#141413",
+    "operator": "#504E49"
+  }
+}

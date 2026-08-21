@@ -31,6 +31,11 @@ if [ -d "$HOME/.omp" ] || command -v omp &>/dev/null; then
   echo "  ✓ Oh My Pi (~/.omp/agent/themes/kami.json)"
 fi
 
+if [ -d "$HOME/.config/opencode" ] || command -v opencode &>/dev/null; then
+  mkdir -p "$HOME/.config/opencode/themes"
+  cp "$REPO_DIR/dist/opencode/kami.json" "$HOME/.config/opencode/themes/kami.json"
+  echo "  ✓ OpenCode (~/.config/opencode/themes/kami.json)"
+fi
 # 2. Terminal Emulators
 if [ -d "$HOME/.warp" ] || command -v warp-terminal &>/dev/null || [ -d "/Applications/Warp.app" ]; then
   mkdir -p "$HOME/.warp/themes"
