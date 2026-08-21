@@ -1,0 +1,26 @@
+{
+  "name": "kami-theme",
+  "displayName": "Kami Theme",
+  "description": "A refined, eye-friendly light theme for VS Code based on the Kami paper aesthetic.",
+  "version": "0.1.0",
+  "publisher": "tenngo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenngoxars/kami-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Kami",
+        "uiTheme": "vs",
+        "path": "./themes/kami-color-theme.json"
+      }
+    ]
+  }
+}

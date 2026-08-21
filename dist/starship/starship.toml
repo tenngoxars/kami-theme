@@ -1,0 +1,14 @@
+palette = "kami"
+
+[palettes.kami]
+bg = "#EAE7E1"
+fg = "#141413"
+ink_blue = "#1B365D"
+ink_light = "#2D5A8A"
+pine_green = "#20563D"
+ochre = "#9E6B00"
+terracotta = "#A64036"
+rust = "#8B4513"
+slate_teal = "#2C5E6B"
+stone = "#7A7871"
+sand = "#DDD8CE"

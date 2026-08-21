@@ -1,0 +1,51 @@
+{
+  "name": "Kami",
+  "author": "tenngo",
+  "variables": {
+    "bg": "#EAE7E1",
+    "fg": "#141413",
+    "cursor": "#1B365D",
+    "selection": "#DDD8CE",
+    "blue": "#1B365D",
+    "green": "#20563D",
+    "yellow": "#9E6B00",
+    "red": "#8B4513",
+    "cyan": "#2C5E6B",
+    "dim": "#96948C"
+  },
+  "globals": {
+    "background": "var(bg)",
+    "foreground": "var(fg)",
+    "caret": "var(cursor)",
+    "selection": "var(selection)",
+    "line_highlight": "#E2DFD7"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "var(dim)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "var(blue)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "entity.name.function, support.function",
+      "foreground": "var(green)"
+    },
+    {
+      "scope": "string",
+      "foreground": "var(yellow)"
+    },
+    {
+      "scope": "constant.numeric",
+      "foreground": "var(red)"
+    },
+    {
+      "scope": "entity.name.type, support.type",
+      "foreground": "var(cyan)"
+    }
+  ]
+}

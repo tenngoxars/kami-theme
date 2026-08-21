@@ -1,0 +1,29 @@
+/* Kami Theme for Obsidian */
+/* Based on Kami Design System (https://github.com/tw93/Kami) */
+
+.theme-light {
+  --background-primary: #EAE7E1;
+  --background-primary-alt: #F4F2EC;
+  --background-secondary: #E2DFD8;
+  --background-secondary-alt: #DDD9D0;
+  --text-normal: #141413;
+  --text-muted: #7A7871;
+  --text-faint: #96948C;
+  --text-accent: #1B365D;
+  --text-accent-hover: #2D5A8A;
+  --interactive-accent: #1B365D;
+  --interactive-accent-hover: #2D5A8A;
+  --divider-color: #D3CFC4;
+  --tab-background-active: #EAE7E1;
+  
+  --h1-color: #1B365D;
+  --h2-color: #1B365D;
+  --h3-color: #1B365D;
+  --h4-color: #1B365D;
+  
+  --code-normal: #8B4513;
+  --code-background: #F4F2EC;
+  
+  --link-color: #2D5A8A;
+  --link-color-hover: #1B365D;
+}

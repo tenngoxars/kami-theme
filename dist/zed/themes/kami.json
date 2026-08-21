@@ -1,0 +1,54 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "name": "Kami",
+  "author": "tenngo",
+  "themes": [
+    {
+      "name": "Kami Light",
+      "appearance": "light",
+      "style": {
+        "background": "#EAE7E1",
+        "editor.background": "#EAE7E1",
+        "editor.foreground": "#141413",
+        "editor.line_number": "#96948C",
+        "editor.active_line_number": "#141413",
+        "editor.active_line_background": "#E2DFD7",
+        "tab_bar.background": "#DDD9D0",
+        "tab.active_background": "#EAE7E1",
+        "tab.inactive_background": "#D5D1C6",
+        "panel.background": "#E2DFD8",
+        "status_bar.background": "#1B365D",
+        "status_bar.foreground": "#FAF9F5",
+        "border": "#D3CFC4",
+        "syntax": {
+          "comment": {
+            "color": "#96948C",
+            "font_style": "italic"
+          },
+          "keyword": {
+            "color": "#1B365D",
+            "font_weight": 700
+          },
+          "function": {
+            "color": "#20563D"
+          },
+          "string": {
+            "color": "#9E6B00"
+          },
+          "number": {
+            "color": "#8B4513"
+          },
+          "type": {
+            "color": "#2C5E6B"
+          },
+          "variable": {
+            "color": "#141413"
+          },
+          "operator": {
+            "color": "#504E49"
+          }
+        }
+      }
+    }
+  ]
+}

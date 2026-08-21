@@ -1,0 +1,43 @@
+{
+  "name": "Kami",
+  "author": "tenngo",
+  "upstream": "https://github.com/tw93/Kami",
+  "description": "A refined, eye-friendly light terminal theme inspired by Kami design system. Soft linen parchment with mineral inks.",
+  "colors": {
+    "canvas": {
+      "background": "#EAE7E1",
+      "foreground": "#141413",
+      "cursor": "#1B365D",
+      "selection": "#DDD8CE",
+      "border": "#D3CFC4",
+      "borderSoft": "#DDD9CE",
+      "surface": "#F4F2EC",
+      "dim": "#96948C",
+      "muted": "#7A7871",
+      "darkWarm": "#3D3D3A",
+      "olive": "#504E49"
+    },
+    "ansi": {
+      "normal": {
+        "black": "#3D3D3A",
+        "red": "#A64036",
+        "green": "#20563D",
+        "yellow": "#9E6B00",
+        "blue": "#1B365D",
+        "magenta": "#4A6B82",
+        "cyan": "#2C5E6B",
+        "white": "#DDD8CE"
+      },
+      "bright": {
+        "black": "#7A7871",
+        "red": "#8B4513",
+        "green": "#2D6A4F",
+        "yellow": "#B8860B",
+        "blue": "#2D5A8A",
+        "magenta": "#6B7D8E",
+        "cyan": "#367A85",
+        "white": "#141413"
+      }
+    }
+  }
+}

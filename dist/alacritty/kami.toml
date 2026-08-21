@@ -1,0 +1,34 @@
+# Kami Theme for Alacritty
+# Based on Kami Design System (https://github.com/tw93/Kami)
+
+[colors.primary]
+background = "#EAE7E1"
+foreground = "#141413"
+
+[colors.cursor]
+text = "#EAE7E1"
+cursor = "#1B365D"
+
+[colors.selection]
+text = "#141413"
+background = "#DDD8CE"
+
+[colors.normal]
+black   = "#3D3D3A"
+red     = "#A64036"
+green   = "#20563D"
+yellow  = "#9E6B00"
+blue    = "#1B365D"
+magenta = "#4A6B82"
+cyan    = "#2C5E6B"
+white   = "#DDD8CE"
+
+[colors.bright]
+black   = "#7A7871"
+red     = "#8B4513"
+green   = "#2D6A4F"
+yellow  = "#B8860B"
+blue    = "#2D5A8A"
+magenta = "#6B7D8E"
+cyan    = "#367A85"
+white   = "#141413"

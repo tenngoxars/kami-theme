@@ -1,0 +1,21 @@
+[delta "kami"]
+    dark = false
+    syntax-theme = "none"
+    file-style = bold "#1B365D"
+    file-decoration-style = "#D3CFC4" ul
+    hunk-header-style = file line-number "#2C5E6B"
+    hunk-header-decoration-style = "#D3CFC4" box
+    minus-style = syntax "#A64036"
+    minus-non-emph-style = syntax "#A64036"
+    minus-emph-style = bold "#8B4513" "#F2E4E4"
+    minus-empty-line-marker-style = normal normal
+    zero-style = syntax normal
+    plus-style = syntax "#20563D"
+    plus-non-emph-style = syntax "#20563D"
+    plus-emph-style = bold "#2D6A4F" "#E4EBE5"
+    plus-empty-line-marker-style = normal normal
+    line-numbers-left-style = "#96948C"
+    line-numbers-right-style = "#96948C"
+    line-numbers-zero-style = "#96948C"
+    line-numbers-minus-style = "#A64036"
+    line-numbers-plus-style = "#20563D"

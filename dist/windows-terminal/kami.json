@@ -1,0 +1,23 @@
+{
+  "name": "Kami",
+  "background": "#EAE7E1",
+  "foreground": "#141413",
+  "cursorColor": "#1B365D",
+  "selectionBackground": "#DDD8CE",
+  "black": "#3D3D3A",
+  "red": "#A64036",
+  "green": "#20563D",
+  "yellow": "#9E6B00",
+  "blue": "#1B365D",
+  "purple": "#4A6B82",
+  "cyan": "#2C5E6B",
+  "white": "#DDD8CE",
+  "brightBlack": "#7A7871",
+  "brightRed": "#8B4513",
+  "brightGreen": "#2D6A4F",
+  "brightYellow": "#B8860B",
+  "brightBlue": "#2D5A8A",
+  "brightPurple": "#6B7D8E",
+  "brightCyan": "#367A85",
+  "brightWhite": "#141413"
+}
